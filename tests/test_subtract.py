@@ -1,5 +1,5 @@
 import pytest
-from lib.subtract import subtract
+from src.subtract import subtract
 
 class Test_Subtract:
 
