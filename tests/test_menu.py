@@ -2,9 +2,10 @@ import pytest
 from src.menu import Menu
 
 class Test_Menu:
-    menu = "Cheeseburger\nDouble Stack Bacon Cheeseburger\nSalad"    
+    menu = "Cheeseburger\t\t$5.5\nDouble Stack Bacon Cheeseburger\t\t$7.5\nSalad\t\t$2.5\n"    
 
     def test_user_can_see_menu(self):
         MenuObject = Menu()
+        print(self.menu)
         assert MenuObject.get_menu() == self.menu
 
