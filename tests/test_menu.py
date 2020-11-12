@@ -9,3 +9,10 @@ class Test_Menu:
         print(self.menu)
         assert MenuObject.get_menu() == self.menu
 
+    def test_can_get_price(self):
+        MenuObject = Menu()
+
+        expected = 5.5
+        actual = MenuObject.get_price_by_item("Cheeseburger")
+
+        assert expected == actual

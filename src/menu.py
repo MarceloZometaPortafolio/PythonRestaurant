@@ -1,5 +1,5 @@
 class Menu:    
-    MenuList = []
+    __MenuList = {}
 
     def __init__(self):
         super().__init__()
@@ -16,3 +16,6 @@ class Menu:
     
         print(returnString)
         return returnString
+
+    def get_price_by_item(self, item):
+        return self.MenuList[item]
