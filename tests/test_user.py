@@ -3,7 +3,7 @@ from src.user import User
 
 class Test_User:
 
-    def test_user_can_login_as_admin(self):
+    def test_user_can_login(self):
         admin = User(1, username="username", password="password")
 
         expected = True       
@@ -11,7 +11,7 @@ class Test_User:
 
         assert expected == actual
 
-    def test_user_cant_login_as_admin(self):
+    def test_user_cant_login(self):
         admin = User(1, username="username", password="password")
 
         expected = False       
