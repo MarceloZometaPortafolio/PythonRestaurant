@@ -19,3 +19,8 @@ class Menu:
 
     def get_price_by_item(self, item):
         return self.MenuList[item]
+
+    def add_item(self, item):
+        for key in item:
+            if not (key in self.MenuList):
+                self.MenuList.update(item)
